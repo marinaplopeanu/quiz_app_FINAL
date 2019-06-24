@@ -12,7 +12,7 @@ function generateQuestionList() {
     // })
 
     var arr = []
-    while (arr.length < 2) {
+    while (arr.length < 10) {
         var r = Math.floor(Math.random() * 94) + 1;
         if (arr.indexOf(r) === -1) arr.push(r);
     }
@@ -84,6 +84,7 @@ function generateQuestion() {
           </fieldset>
       </form>
     </div>`;
+    
 }
 
 // function styleQuiz(){
@@ -108,7 +109,7 @@ function userSelectAnswer() {
         if (correctAnswer.includes(answer)) {
             selected.parent().addClass("correct");
             // alert("correct answer");
-            correct++;
+            changeScore();
             correctAnswerSelected()
         } else {
             selected.parent().addClass("wrong");
@@ -119,11 +120,15 @@ function userSelectAnswer() {
 }
 
 
+function changeScore() {
+    correct ++;
+  }
 
 //what happens if the users press the wrong answer
 function wrongAnswerSelected(correctAnswer) {
     $("h2").remove();
     $(".logo").remove();
+    $(".score").focus();
     $("form").html(`<div class="answered-wrong module">
     <img src="patriotic_eagle_disapointed.JPG" alt="patriotic eagle disapointed" class="image">
     <h3>Wrong!</h3>
@@ -136,6 +141,7 @@ function wrongAnswerSelected(correctAnswer) {
 function correctAnswerSelected() {
     $("h2").remove();
     $(".logo").remove();
+    $(".score").focus();
     $("form").html(`<div class="answered-correct module">
     <img src="patriotic_eagle_thumbs_up.JPG" alt="patriotic eagle thumbs up" class="image">
     <h3>Correct!</h3>
