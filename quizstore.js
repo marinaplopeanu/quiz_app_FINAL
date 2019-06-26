@@ -6,43 +6,32 @@ const STORE = [
     {
         question: 'What is the supreme law of the land?',
         answers: ['the Supreme Court', 'the Bill of Rights', 'the Constitution', 'the President', 'the Declaration of Independence'],
-        //indexOf asnwer 'the Constitution' = 2
-        correctAnswer: [2],
-        icon: 'https://www.loc.gov/exhibits/creating-the-united-states/Constitution/ConstitutionLegacy/Assets/2a07727u_enlarge.jpg',
-        alt: 'the constitution'
+        correctAnswer: [2]
     },
     //2
     {
         question: 'What does the Constitution do?',
-        answers: ['sets up the government', 'defines America', 'tells you how to live your life', 'protects basic rights of Americans', 'sets up the government'],
-        correctAnswer: [0, 2, 3],
-        icon: 'https://www.loc.gov/exhibits/creating-the-united-states/Constitution/ConstitutionLegacy/Assets/2a07727u_enlarge.jpg',
-        alt: 'the constitution'
+        answers: ['sets up the government', 'defines America', 'tells you how to live your life', 'protects basic rights of Americans', 'sets up the state structure'],
+        correctAnswer: [0, 3]
     },
     //3
     {
         question: 'The idea of self-government is in the first three words of the Constitution. What are these words?',
         answers: ['liberty for all', 'we the citizens', 'justice for all', 'we the people', 'libety and happiness'],
-        correctAnswer: [3],
-        icon: 'https://www.loc.gov/exhibits/creating-the-united-states/Constitution/ConstitutionLegacy/Assets/2a07727u_enlarge.jpg',
-        alt: 'the constitution'
+        correctAnswer: [3]
     },
     //4
     {
         question: 'What is an amendment?',
         answers: ['rewriting the Constitution', 'part of the Electoral College', 'a vote in Congress', 'a change to the Constitution', 'the process by which Supreme Court Justices are chosen'],
-        correctAnswer: [3],
-        icon: 'https://blogs.princeton.edu/mudd/wp-content/uploads/sites/41/mt/FDR%20Press%20release%20image.jpg',
-        alt: 'amendment'
+        correctAnswer: [3]
 
     },
     //5
     {
         question: 'What do we call the first ten amendments to the Constitution?',
         answers: ['the Bill of Lading', 'the Bill of Rights', 'the List of Ten', 'the Ten Commandments', 'the Ten Amendments'],
-        correctAnswer: [1],
-        icon: 'https://blogs.princeton.edu/mudd/wp-content/uploads/sites/41/mt/FDR%20Press%20release%20image.jpg',
-        alt: 'amendment'
+        correctAnswer: [1]
     },
     //6
     {
@@ -53,7 +42,7 @@ const STORE = [
     //7
     {
         question: 'How many amendments does the Constitution have?',
-        answers: ['2', '10', '20', '25', '27'],
+        answers: ['2 amendments', '10 amendments', '20 amendments', '25 amendments', '27 amendments'],
         correctAnswer: [4]
     },
     //8
@@ -64,7 +53,7 @@ const STORE = [
     },
     //9
     {
-        question: 'What are two rights in the Declaration of Independence?',
+        question: 'What is one right from the Declaration of Independence?',
         answers: ['Liberty', 'Life', 'Free speech', 'Pursuit of happiness', 'Free Press'],
         correctAnswer: [0, 1, 3]
     },
@@ -120,13 +109,13 @@ const STORE = [
     //18
     {
         question: 'How many U.S. Senators are there?',
-        answers: ['99', '100', '50', '250', '435'],
+        answers: ['99 senators', '100 senators', '50 senators', '250 senators', '435 senators'],
         correctAnswer: [1]
     },
     //19
     {
         question: 'We elect a U.S. Senator for how many years?',
-        answers: ['2', '4', '8', '10', '6'],
+        answers: ['2 years', '4 years', '8 years', '10 years', '6 years'],
         correctAnswer: [4]
     },
     //20  =hide this. ask the state at the begining
@@ -138,13 +127,13 @@ const STORE = [
     //21
     {
         question: 'The House of Representatives has how many voting members? ',
-        answers: ['435', '12', '100', '9', '6'],
+        answers: ['435 members', '12 members', '100 members', '9 members', '6 members'],
         correctAnswer: [0]
     },
     //22
     {
         question: 'We elect a U.S. Representative for how many years?',
-        answers: ['10', '4', '2', '1', '5'],
+        answers: ['10 years', '4 years', '2 years', '1 year', '5 years'],
         correctAnswer: [2]
     },
     //23 =hide this. ask the state at the begining
@@ -168,7 +157,7 @@ const STORE = [
     //26
     {
         question: 'We elect a President for how many years?',
-        answers: ['2', '4', '6', '8', '10'],
+        answers: ['2 years', '4 years', '6 years', '8 years', '10 years'],
         correctAnswer: [1]
     },
     //27
@@ -222,7 +211,7 @@ const STORE = [
     //35
     {
         question: 'What does the President’s Cabinet do?',
-        answers: ['They tell the President what he must do.', 'They make laws.', 'They advise the President.', 'Federal law enforcement', 'They clean the White House'],
+        answers: ['They tell the President what he must do.', 'They make laws.', 'They advise the Prime Minister.', 'Federal law enforcement', 'They clean the White House'],
         correctAnswer: [0]
     },
     //36
@@ -337,7 +326,7 @@ const STORE = [
     //54
     {
         question: 'How old do citizens have to be to vote for President?',
-        answers: ['21', '18', '16', '17', '23'],
+        answers: ['21 years old', '18 years old', '16 years old', '17 years old', '23 years old'],
         correctAnswer: [1]
     },
     //55
@@ -409,7 +398,7 @@ const STORE = [
     },
     //66
     {
-        question: 'What happened at the Constitutional Convention?',
+        question: 'When was the Constitution written?',
         answers: ['1787', '1987', '1802', '1776', '1778'],
         correctAnswer: [0]
     },
@@ -545,19 +534,19 @@ const STORE = [
     //88
     {
         question: 'What are the two longest rivers in the United States?',
-        answers: ['Missouri, Hudson', 'Missouri, Mississippi', 'Mississippi, Ohio', 'MOhio, Rio Grandeohegan', 'Amazon, Hudson'],
+        answers: ['Missouri, Hudson', 'Missouri, Mississippi', 'Mississippi, Ohio', 'Charles River , Mystic River', 'Amazon, Hudson'],
         correctAnswer: [1]
     },
     //89
     {
         question: 'What ocean is on the West Coast of the United States?',
-        answers: ['Arctic', 'Atlantic', 'Indian', 'Pacific', 'Southern Ocean'],
+        answers: ['Arctic Ocean', 'Atlantic Ocean', 'Indian Ocean', 'Pacific Ocean', 'Southern Ocean'],
         correctAnswer: [3]
     },
     //90
     {
         question: 'What ocean is on the East Coast of the United States?',
-        answers: ['Arctic', 'Atlantic', 'Indian', 'Pacific', 'Southern Ocean'],
+        answers: ['Arctic Ocean', 'Atlantic Ocean', 'Indian Ocean', 'Pacific Ocean', 'Southern Ocean'],
         correctAnswer: [1]
     },
     //91
@@ -637,21 +626,3 @@ function tenRandomQuestions() {
 
 }
 
-
-// correct = 'https://previews.123rf.com/images/nazlisart/nazlisart1404/nazlisart140400013/27899104-vector-cartoon-illustration-of-uncle-sam-holding-a-waving-american-flagand-pointing-i-want-you-like-.jpg'
-
-// wrong = 'https://vignette.wikia.nocookie.net/pawnstarsthegame/images/5/5f/Uncle_Sam.png/revision/latest?cb=20111214173045'//typeahead for state -> same answers are based on state (all commended now)
-
-//AMERICAN GOVERNMENT
-//A: Principles of American Democracy - 
-//B: System of Government
-//C: Rights and Responsibilities
-
-//AMERICAN HISTORY
-//A: Colonial Period and Independence
-//B: 1800 s
-//C: Recent American History and Other Important Historical Information
-//
-//A: Geography
-//B: Symbols
-//C: Holidays
